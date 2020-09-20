@@ -49,7 +49,7 @@ a {
   font-weight: 700;
 }
 
-h1, .advantages-none {
+.visually-hidden, .advantages-none {
   visibility: hidden;
 }
 
