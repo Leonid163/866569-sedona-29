@@ -62,7 +62,7 @@ a {
   line-height: 26px;
   color: var(--grey-500);
 }
-.color-insert, .advantages-feature-item, .advantages-hotel-number {
+.color-insert, .advantages-feature-item, .item-number {
   color: var(--white);
 }
 
@@ -71,8 +71,6 @@ a {
   font-weight: bold;
 }
 .advantages-feature-item {
-  line-height: 21px;
-  display: flex;
 }
 .footer-info {
   font-weight: bold;
@@ -230,3 +228,7 @@ a {
 .button-search:active {
   background-color: var(--brown-150);
   color: var(--transparent-white);
+}
+.item-text {
+  font-size: 21px;
+}
