@@ -281,3 +281,12 @@ a {
   grid-template-columns: 1fr 1fr 1fr;
   z-index: 2;
 }
+.devil{
+  display: grid;
+  grid-template-columns: auto 400px;
+  grid-column: 1 / -1;
+}
+.home{
+  grid-template-columns: 400px auto;
+  grid-column: 1 / -1;
+}
