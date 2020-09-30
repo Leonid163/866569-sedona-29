@@ -24,6 +24,9 @@
   --grey-550: #231f20;
   --grey-600: rgba(0, 1, 1, 0.15);
 }
+.page {
+  height: 100%;
+}
 
 .page-body {
   font-family: "PT Sans", "Arial", sans-serif;
@@ -33,6 +36,11 @@
   color: var(--grey-500);
   text-transform: uppercase;
   background-color: var(--grey-50);
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  width: 1200px;
 }
 
 .site-nav, .hotel-list, .widgets,.sorting-list, .features-list, .advantages-list {
@@ -231,4 +239,45 @@ a {
 }
 .item-text {
   font-size: 21px;
+}
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.background-banner,.welcome-banner{
+  grid-column: 1 / -1;
+  grid-row: 1 /-1;
+  margin: auto;
+}
+.main-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 56px;
+}
+.site-nav {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.main-header-logo {
+  grid-column: 3 / 4;
+  grid-row: 1 / -1;
+  z-index: 1;
+}
+.advantages-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+.features-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.page-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  z-index: 2;
 }
