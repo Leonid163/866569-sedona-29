@@ -41,6 +41,7 @@
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
   width: 1200px;
+  margin: auto;
 }
 
 .site-nav, .hotel-list, .widgets,.sorting-list, .features-list, .advantages-list {
@@ -250,30 +251,12 @@ a {
   margin: auto;
 }
 .main-nav {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 56px;
 }
 .site-nav {
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 .main-header-logo {
-  grid-column: 3 / 4;
-  grid-row: 1 / -1;
-  z-index: 1;
-}
-.advantages-list{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
-}
-.features-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .page-footer {
@@ -281,12 +264,76 @@ a {
   grid-template-columns: 1fr 1fr 1fr;
   z-index: 2;
 }
-.devil{
+.features-list {
   display: grid;
-  grid-template-columns: auto 400px;
-  grid-column: 1 / -1;
+  grid-template-columns: 1fr 1fr 1fr;
 }
-.home{
-  grid-template-columns: 400px auto;
-  grid-column: 1 / -1;
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.feature-item {
+  display: grid;
+  grid-column: 1 / 4;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+.img-home-sedona {
+  grid-column: 2 / 4;
+}
+.advantages-list {
+  grid-column: 1 / 4;
+}
+.img-devil {
+  grid-column: 1 / 3;
+}
+.feature-info{
+  grid-column: 3 / 4;
+}
+.feature-item-1 {
+  display: grid;
+  grid-column: 1 / 4;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.item{
+  grid-column: 4 / 5;
+}
+.advantages-list {
+  display: grid;
+  grid-column: 1 / 4;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.sorting {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.sorting-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.hotel-number {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.brief-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr
+}
+.name-hotel {
+  grid-column: 1 / 4;
+}
+.type-hotel{
+  grid-column: 1 / 2
+}
+.price {
+  grid-column: 2 / 3
+}
+.button-info {
+  grid-column: 1 / 2;
+  gap: 5px;
+  margin-right: 20px;
+}
+.button-booking {
+  grid-column: 2 / 3
 }
