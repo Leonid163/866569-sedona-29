@@ -262,7 +262,6 @@ a {
 .page-footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  z-index: 2;
 }
 .features-list {
   display: grid;
@@ -288,15 +287,8 @@ img {
 .img-devil {
   grid-column: 1 / 3;
 }
-.feature-info{
-  grid-column: 3 / 4;
-}
-.feature-item-1 {
-  display: grid;
-  grid-column: 1 / 4;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-.item{
+
+.navigation-item-three{
   grid-column: 4 / 5;
 }
 .advantages-list {
@@ -312,7 +304,7 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
-.hotel-number {
+.hotel {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -323,17 +315,9 @@ img {
 .name-hotel {
   grid-column: 1 / 4;
 }
-.type-hotel{
-  grid-column: 1 / 2
-}
-.price {
-  grid-column: 2 / 3
-}
 .button-info {
   grid-column: 1 / 2;
   gap: 5px;
   margin-right: 20px;
 }
-.button-booking {
-  grid-column: 2 / 3
-}
+
