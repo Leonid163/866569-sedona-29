@@ -306,7 +306,7 @@ img {
 }
 .hotel {
   display: grid;
-  grid-template-columns: 200px 800px 200px;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .brief-info {
   display: grid;
