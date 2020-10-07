@@ -260,8 +260,8 @@ a {
 }
 
 .page-footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-around;
 }
 .features-list {
   display: grid;
@@ -302,11 +302,11 @@ img {
 }
 .sorting-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 30% 30% 40%;
 }
 .hotel {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 200px 800px 200px;
 }
 .brief-info {
   display: grid;
@@ -320,4 +320,6 @@ img {
   gap: 5px;
   margin-right: 20px;
 }
-
+.social-list {
+display: flex;
+}
