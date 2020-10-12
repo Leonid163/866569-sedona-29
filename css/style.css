@@ -56,6 +56,7 @@ a {
 .site-nav {
   line-height: 26px;
   font-weight: 700;
+  margin-top: 0px;
 }
 
 .visually-hidden, .intro-text {
@@ -102,6 +103,8 @@ a {
 .color-blue-fone {
  background-color: var(--blue-50);
  align-items: center;
+ display: flex;
+ flex-direction: column;
 }
 .advantages-list{
   color: var(--black);
@@ -124,6 +127,9 @@ a {
   font-size: 21px;
   line-height: 26px;
   background: var(--brown-50);
+  color: var(--white);
+  border: 0;
+  padding: 30px 0;
 }
 .sorting-list {
   font-size: 12px;
@@ -180,6 +186,7 @@ a {
   background-color: var(--blue-50);
   padding: 3px 15px;
   text-align: center;
+  color: var(--white);
 }
 .button-info:hover {
   background-color: var(--blue-100);
@@ -197,6 +204,7 @@ a {
   background-color: var(--brown-50);
   padding: 3px 15px;
   text-align: center;
+  color: var(--white);
 }
 .button-booking:hover {
   background-color: var(--brown-100);
@@ -275,9 +283,12 @@ a {
 }
 .button-search {
   font-weight: bold;
-  font-size: 14px;
-  line-height: 21px;
   background-color: var(--brown-50);
+  display: inline-block;
+  width: 568px;
+  height: 86px;
+  padding: 30px 0;
+  color: var(--white);
 }
 .button-search:hover {
   background-color: var(--brown-100);
@@ -310,7 +321,6 @@ a {
 .main-header-logo {
   position: absolute;
   margin-left: 500px;
-  background-color: var(--white);
 }
 
 .page-footer {
@@ -381,6 +391,7 @@ background-color: var(--white)
   grid-column: 1 / 2;
   gap: 5px;
   margin-right: 20px;
+  color: var(--white);
 }
 .social-list {
 display: flex;
@@ -483,8 +494,20 @@ display: flex;
   color: var(--white);
 }
 .filters-form {
-  background-color: black;
+  background-image: url(../img/bg-hotel.png);
+  background-position: center;
+  display: flex;
 }
 .filter-form {
   color: var(--white);
+}
+.text-item, .advantages-feature-item {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.search-block {
+  background-color: var(--white-color);
+  box-shadow: var(--basic-shadow);
+  margin: 38px auto 0;
+  width: 568px;
 }
