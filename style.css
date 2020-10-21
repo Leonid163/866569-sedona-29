@@ -48,7 +48,7 @@
 .site-nav,
 .hotel-list,
 .widgets,
-.sorting-list, .features-list, .advantages-list, .social-list, .rating-list, .sort-range-list, .filter-list, .list-reset {
+.sorting-list, .features-list, .advantages-list, .social-list, .rating-list, .sort-range-list, .filter-list {
   list-style-type: none;
 }
 
@@ -247,17 +247,14 @@ a {
   text-decoration: none;
   margin-top: 2px;
   margin-right: 32px;
-  border-bottom: 1px dotted var(--black);
 }
 
 .filter-name a:hover {
   color: var(--blue-50);
-  border-bottom: 1px dotted var(--black);
 }
 
 .filter-name a:active {
   color: var(--black);
-  border-bottom: 1px dotted var(--black);
 }
 
 .filter-name a.active,
@@ -265,7 +262,6 @@ a {
 .filter-name a.active:focus,
 .filter-name a.active:active {
   color: var(--blue-50);
-  border-bottom: 1px dotted var(--black);
 }
 
 .name-hotel a {
@@ -514,7 +510,12 @@ display: flex;
 .block-form {
   padding: 55px;
 }
-
+.search-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
 .search-info {
   display: flex;
   flex-wrap: wrap;
@@ -691,346 +692,9 @@ display: flex;
 .price-controls input {
   background-color: transparent;
   border: 0;
-  color: var(--white);
+  color: var(--white-color);
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
   width: 50%;
   margin-left: 5px;}
-  .search-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: center;
-  }
-
-  .search-option {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    text-align: left;
-  }
-
-  .search-option + .search-option {
-    margin-top: 29px;
-  }
-
-  .search-option label {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 26px;
-    letter-spacing: 0px;
-    text-align: left;
-    color: var(--black);
-    width: 112px;
-  }
-
-  .search-input {
-    padding: 0 0 0 13px;
-    height: 38px;
-    border: 0;
-    background-color: var(--grey-50);
-    width:293px ;
-  }
-
-  .search-input:focus {
-    background-color: var(--white);
-    outline: 2px solid var(--grey-150);
-  }
-
-  .search-input::placeholder,
-  .search-input {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 26px;
-    letter-spacing: 0px;
-    color: var(--black);
-    text-transform: uppercase;
-  }
-
-  .calendar-button {
-    position: absolute;
-    right: 9px;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 0;
-    z-index: 2;
-    cursor: pointer;
-  }
-
-  .calendar:hover path {
-    fill: var(--black);
-  }
-
-  .calendar:focus path {
-    fill: var(--blue);
-  }
-
-  .search-input-number {
-    width: 113px;
-    text-align: center;
-    padding: 0;
-  }
-
-  .search-number + .search-number label {
-    width: 53px;
-  }
-
-  .number-wrapper {
-    position: relative;
-  }
-
-  .number-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0 13px;
-    cursor: pointer;
-  }
-
-  .button-minus {
-    left: 0;
-  }
-
-  .button-plus {
-    right: 0;
-  }
-
-  .sign:hover path,
-  .sign:hover rect {
-    fill: var(--black);
-  }
-
-  .sign:focus path,
-  .sign:focus rect {
-    fill: var(--blue);
-  }
-.form-block {
-  width: 568px;
-  background-color: var(--white);
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 55px;
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-}
-.button-find{
-  width: 458px;
-  height: 58px;
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 26px;
-  background-color: var(--blue-50);
-  text-align: center;
-  color: var(--white);
-  border: none;
-}
-.button-find:hover {
-  background-color: var(--blue-100);
-}
-
-.button-find:active {
-  background-color: var(--blue-150);
-}
-.show-button{
-  border: 2px solid var(--white);
-  border-radius: 2px;
-  background-color: transparent;
-  color: var(--white);
-  text-transform: uppercase;
-  padding: 7px 35px;
-  display: block;
-  margin: 33px auto 0;
-  cursor: pointer;
-}
-
-
-.hotels-filter {
-  background-image: url(../img/bg-hotel.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: var(--black);
-  padding-top: 26px;
-  padding-bottom: 32px;
-  background-position: center;
-  padding-left: 73px;
-  padding-right: 73px;
-}
-
-.filter {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.filter fieldset {
-  flex-basis: 25%;
-  padding: 0;
-  margin: 0;
-  border: none;
-  color: var(--white);
-}
-.filter fieldset:nth-child(3n+3) {
-  flex-basis: 50%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.range-wrapper {
-  padding-left: 150px;
-}
-
-.filter legend,
-.range-caption {
-  margin-bottom: 10px;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 21px;
-  text-align: left;
-}
-
-.filter-option:not(:last-child) {
-  margin-bottom: 23px;
-}
-
-.filter-option label {
-  position: relative;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  user-select: none;
-  padding-left: 38px;
-}
-
-.checkbox-on,
-.checkbox-off {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.filter-input:checked + label .checkbox-on {
-  display: block;
-}
-
-.filter-input:checked + label .checkbox-off {
-  display: none;
-}
-
-.filter-input + label .checkbox-on {
-  display: none;
-}
-
-.filter-input-checkbox:checked:disabled + label .checkbox-on path,
-.filter-input-checkbox:disabled + label .checkbox-off path {
-  fill: var(--grey-450);
-}
-
-.range-caption {
-  margin-top: 0;
-}
-
-.range-filter {
-  width: 317px;
-  margin-top: 10px;
-}
-
-.range-controls {
-  position: relative;
-  padding-top: 20px;
-}
-
-.range-controls .scale {
-  height: 2px;
-  background-color: var(--transparent-white);
-}
-
-.range-controls .bar {
-  width: 70%;
-  height: 2px;
-  background-color: var(--white);
-}
-
-.range-controls .toggle {
-  position: absolute;
-  top: 10px;
-  left: 0;
-  width: 4px;
-  height: 4px;
-  padding: 0;
-  border: 8px solid var(--white);
-  background-color: var(--grey-250);
-  border-radius: 50%;
-  box-shadow: 0 2px 0 0 var(--grey-300);
-  cursor: pointer;
-}
-
-.range-controls .toggle:hover {
-  width: 5px;
-  height: 5px;
-  border: 9px solid var(--white);
-}
-
-.range-controls .toggle-min {
-  left: 18px;
-}
-
-.range-controls .toggle-max {
-  left: 160px;
-}
-
-.price-controls {
-  display: flex;
-  justify-content: space-between;
-  height: 36px;
-  border: 2px solid var(--white);
-  border-radius: 2px;
-}
-
-.price-controls label {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-basis: 50%;
-  position: relative;
-}
-
-.min-price::after {
-  content: "";
-  position: absolute;
-  top: 7px;
-  right: 0;
-  width: 2px;
-  height: 22px;
-  background-color: var(--white);
-}
-
-.price-controls input {
-  background-color: transparent;
-  border: 0;
-  color: var(--white);
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  width: 50%;
-  margin-left: 5px;
-}
-.filter-button {
-  border: 2px solid var(--white);
-  border-radius: 2px;
-  background-color: transparent;
-  color: var(--white);
-  text-transform: uppercase;
-  padding: 7px 35px;
-  display: block;
-  margin: 33px auto 0;
-  cursor: pointer;
-}
